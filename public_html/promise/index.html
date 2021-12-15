@@ -1,5 +1,3 @@
-function task(x) {
-    const pr = (age) => new Promise((resolve, reject) => age < 18 ? resolve('yes') : reject('no'));
-    return pr(x);
+function task(x){
+    return new Promise((res,rej) => x<18 ? res('yes') : rej('no'))
 }
-
